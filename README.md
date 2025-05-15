@@ -1,5 +1,5 @@
 # PopGlitch-VAE
-fine-turning Magenta's MusicVAE by glitched-POP909dataset
+fine-turning Magenta's MusicVAE（hierdec-trio_16bar） by glitched-POP909dataset
 pip install magenta==2.4.1 package (tested only on Python == 3.8)
 
 pretty_midi>=0.2.9
