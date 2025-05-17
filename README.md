@@ -7,4 +7,11 @@ In this project, I implemented an innovative layer freezing strategy to optimize
 pip install magenta==2.4.1 package (tested only on Python == 3.8)
 pretty_midi>=0.2.9
 numpy>=1.20.0
-
+# Training
+python train_with_freeze.py \
+  --config=cat-mel_2bar_big \
+  --run_dir=./runs/cat-mel \
+  --examples_path=./mel.tfrecord \
+  --num_steps=10000 \
+  --mode=train \
+  --hparams=batch_size=32,learning_rate=0.0005
