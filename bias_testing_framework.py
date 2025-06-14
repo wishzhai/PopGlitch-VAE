@@ -1,17 +1,5 @@
 #!/usr/bin/env python3
-"""
-MusicVAE Bias Detection Framework
-=================================
-Systematic testing framework for identifying AI bias in music generation models.
 
-Implements bias detection methodology from:
-"AI-Glitch Incompatibilities: Implicit Bias Limitations on Experimental Musical Expression in MusicVAE"
-ISMIR HCMIR Workshop 2024
-
-Usage: python bias_testing_framework_for_reviewers.py
-
-Authors: DigiScore Research Group
-"""
 
 import os
 import numpy as np
@@ -103,11 +91,11 @@ class TrainingDiagnostics:
         print("=" * 50)
         
         try:
-            # Load pre-trained model
+            # Load fine-tuned model
             model = TrainedModel(
                 self.config,
                 batch_size=1,
-                checkpoint_dir_or_path="./checkpoints/cat-mel_2bar_big.ckpt"
+                checkpoint_dir_or_path="./10000ckpt/model.ckpt-10000"
             )
             
             print("✅ Model loaded successfully")
