@@ -16,3 +16,5 @@ python train_with_freeze.py \
   --num_steps=10000 \
   --mode=train \
   --hparams=batch_size=32,learning_rate=0.0005
+#Result
+Run `python bias_testing_framework.py` to execute comprehensive bias analysis across data representation, architecture, training objectives, and output generation stages. 
