@@ -1,3 +1,5 @@
+This is code for: “Blaming the Algorithm: An Analysis of Interpolation Failures in MusicVAE’s Latent Space,”
+     3rd Workshop on Human-Centric Music Information Research (HCMIR@ISMIR), 2025.
 # PopGlitch-VAE
 
 A research project that fine-tunes Google's Magenta MusicVAE model using glitched POP909 dataset to explore the model's capacity for learning experimental music characteristics.
